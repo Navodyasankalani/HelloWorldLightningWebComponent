@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Toggle Practice" icon-name="custom:custom13">
+        <div class="slds-m-around_medium">
+            <lightning-button class="slds-m-arround_small" label="Click me to toggle the text" variant="netural" onclick={toggleHandler}> 
+            </lightning-button>
+            <template if:false={toggleText}>
+                Let's play hide and seek
+            </template>
+        </div>
+    </lightning-card>
+</template>

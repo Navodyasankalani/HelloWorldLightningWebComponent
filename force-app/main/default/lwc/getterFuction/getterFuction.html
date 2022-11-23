@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Getter Practice" icon-name="custom:custom9">
+        <div class="slds-m-around_medium">
+            <li>{title}</li>
+            <li>{getTitle}</li>            
+        </div>
+
+        <div class="slds-m-around_medium">
+            <button class="slds-button slds-button_neutral" onclick={clickHandler}>ON</button> 
+            <button class="slds-button slds-button_neutral" onclick={clickHandler}>OFF</button>            
+        </div>
+        <div class="slds-m-around_medium">
+            <div class="slds-box"></div>
+            <div class="slds-box" >{boxStatus}</div>
+        </div>
+        <hr/>
+            <div class="box">{boxStatus}</div>
+
+            
+       
+    </lightning-card>
+</template>

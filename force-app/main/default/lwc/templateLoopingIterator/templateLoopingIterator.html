@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="iterator looping array object" icon-name="custom:custom16">
+        <template iterator:it={carDetails}>
+            <div key={it.value.id}>
+                <li if:true={it.first}><strong>List of Top companies and there CEO's </strong></li>
+                <a href="#" ><strong>{it.value.type} : </strong>{it.value.capacity}</a>
+                <li  if:true={it.last}><strong>@ This is footer </strong></li>
+            </div>
+        </template>
+    </lightning-card>
+
+</template>

@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="for:each with array" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium">
+            <template for:each={carList} for:item="car">
+                <a href="#" key={car}>
+                   <li>{car}</li> 
+                </a>
+            </template>
+        </ul>
+    </lightning-card>
+    <hr/>
+    <lightning-card title="for:each with array object" icon-name="custom:custom15">
+        <ul class="slds-m-p-around_medium slds-list_horizontal slds-has-inline-block-links">
+            <template for:each={cars} for:item="cars">
+                <a href="#" key={cars.id} >
+                   <li>{cars.color}</li>
+                   <li>{cars.type}</li> 
+                   <li>{cars.registration}</li>  
+                </a>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

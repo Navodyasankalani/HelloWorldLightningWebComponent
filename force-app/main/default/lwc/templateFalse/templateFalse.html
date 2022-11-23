@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="if:false practice" icon-name="custom:custom12">
+        <div class="slds-m-arround_medium">
+           <lightning-button class="slds-m-arround_small" label="Hide Text" variant="brand" onclick={hideShowText}>
+        </lightning-button>  
+                <!-- <button class="slds-button slds-button_neutral" onclick={hideShowText}>Hide the text</button>  -->
+                <template if:false={hideText}>
+                   <h1>hide text one</h1> 
+                </template>
+           
+        </div>
+    </lightning-card>
+</template>

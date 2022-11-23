@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="if:true practice" icon-name="custom:custom11">
+        <div class="slds-m-around_medium">
+            <button class="slds-button slds-button_brand" onclick={handleHideText}>Show the hide text</button>
+            <template if:true={showText}>
+                <h1>Harii</h1>
+            </template>
+        </div>
+    </lightning-card>
+</template>
